@@ -43,5 +43,4 @@ def load_data():
 def save_data(df):
     # drop the column so it doesn't pollute the search
     df = df.drop(columns=['_concatenated'])
-    df.to_csv('data.csv')
-
+    df.to_csv('data.csv', index=False)
